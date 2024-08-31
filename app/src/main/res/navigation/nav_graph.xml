@@ -26,4 +26,19 @@
             android:id="@+id/navigate_to_home"
             app:destination="@id/homeFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/previousFortuneFragment"
+        android:name="com.example.myapplication.View.PreviousFortuneFragment"
+        android:label="fragment_previous_fortune"
+        tools:layout="@layout/fragment_previous_fortune" />
+    <fragment
+        android:id="@+id/premiumFragment"
+        android:name="com.example.myapplication.View.PremiumFragment"
+        android:label="fragment_premium"
+        tools:layout="@layout/fragment_premium" />
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.example.myapplication.View.IntroFragment"
+        android:label="fragment_intro"
+        tools:layout="@layout/fragment_intro" />
 </navigation>
