@@ -26,21 +26,20 @@
             />
 
 
-        <!-- ImageView to Display Spirit Animal Image -->
-        <ImageView
-            android:id="@+id/imgSpiritAnimal"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:src="@drawable/home_image"
-            android:scaleType="centerCrop"
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/carousel_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:clipToPadding="false"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
             app:layout_constraintTop_toBottomOf="@id/toolbar"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/txtSpiritAnimal"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
-            />
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
 
         <!-- TextView to Display Spirit Animal Name -->
         <TextView
@@ -50,7 +49,7 @@
             android:text="Text2"
             android:textSize="24sp"
             android:gravity="center"
-            app:layout_constraintTop_toBottomOf="@id/imgSpiritAnimal"
+            app:layout_constraintTop_toBottomOf="@id/carousel_recycler_view"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toTopOf="@id/txtFortune"
